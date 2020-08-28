@@ -1,7 +1,115 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("img/fondo2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}  
 h1, h2, h3{
-    color: yellowgreen;
+    color: rgb(16, 84, 148);
+    font-size: 30px;
+    font-family: "Segoe UI Emoji Regular";
+    
+}
+ 
+p{
+    color:rgb(48, 47, 61);
+    font-size: 20px;
+    font-family: "Segoe UI Emoji Regular";
 }
 
-p{
-    color:green;
+a[href] {
+    color: rgb(16, 84, 148);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Segoe UI Emoji Regular";
+}
+
+header{
+    width: 100%;
+    background: #4E94AB;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li{
+    text-align: center;
+    flex-grow: 1;
+    border-right: none;
+    
+}
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3)
+
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:768px) {
+
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #fff,
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }    
 }
