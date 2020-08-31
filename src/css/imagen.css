@@ -11,9 +11,9 @@
     max-width: 1000px;
     margin: auto;
     padding: 40px;
-    background: rgba(190, 190, 199, 0.192);
+    ;
     margin-top: 50px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+
 }
 
 .box img{
@@ -114,13 +114,12 @@
 /* Div de las fotos */
 
 #foto-left{
-    width: 450px;
-    height: 430px;
+    width: 410px;
+    height: 380px;
     border-radius: 90%;
-    
     float: left;
-    margin-right: -40px;
-    margin-bottom: -15px;
+    margin-right: -30px;
+    margin-bottom: -65px;
 }
 
 .boxes img{
@@ -129,8 +128,8 @@
     border-radius: 80%;
     border: 7px solid #fff;
     float: right;
-    margin-right: 60px;
-    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-bottom: 65px;
 }
 
 .boxes {
@@ -144,10 +143,11 @@
 }
 
 .boxes p{
-    text-align: justify;
+
     font-size: 18px;
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: justify;
 }
 
 .boxes h1{
