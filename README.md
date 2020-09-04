@@ -13,11 +13,10 @@
 
 ## 2. Resumen del proyecto
 
-Este proyecto se ha desarrollado con 85% de JavaScript y 18.5% de HTML.
 
 Para la realización de la validación se utilizó:
 
-* viñeta
+* 
 
 ## 3. Definición del producto
 
