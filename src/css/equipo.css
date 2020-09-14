@@ -5,7 +5,6 @@
 }
 
 #info {
-    margin: 20px;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -22,10 +21,10 @@
 }
 
 .info-persona img{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 6px solid #fff;
 
 }
 

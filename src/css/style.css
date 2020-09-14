@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 a[href] {
@@ -34,16 +36,29 @@ body {
 
 .encabezado {
     cursor: pointer;
-    
+    position: center;
+    text-align: center;
+    margin-top: 60px;
 }
 
-#banner.cajita{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    color: #fff;
+
+
+.boxbox {
+    width: 98%;
+    margin: auto;
+    display: flex;
 }
+
+
+header .boxbox{
+    display:table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
 .container {
 
     padding: 5px 5px 2px 10px;
@@ -78,11 +93,6 @@ p{
 
 }
 
-section{
-    width: 100%;
-    margin-bottom: 25px;
-}
-
 .container li{
     color:rgb(3, 3, 3);
     font-size: 20px;
@@ -90,6 +100,73 @@ section{
     width: 70%;
     margin: auto;
     padding: 10px;
+}
+
+.telefono {
+    width: 100%;   
+    position: relative;
+    margin: auto;
+    
+}
+
+.formulario .form .for-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #0d0d0ef6;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.formulario .form{
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin:auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px; 
+
+}
+
+.formulario  .form .form-label{
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+
+}
+
+.formulario .form .form-input, .form-textarea{
+    background: white;
+    border: none;
+    border-bottom: 3px solid #131212;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: rgb(15, 15, 15);
+
+}
+
+.formulario .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.formulario .form .btn-submit {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    outline: none;
+    background:  rgb(15, 15, 15);
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
 }
 
 footer{
@@ -104,4 +181,62 @@ footer{
 footer:hover{
     cursor: pointer;
     background: rgba(44, 44, 46, 0.795);
+}
+
+/* social bar */
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );;
+}
+
+.icon-soundcloud {
+	background: #f15212;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
